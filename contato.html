@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
 		<title>Contatos - Barbearia Alura</title>
 
 		<link rel="stylesheet" href="reset.css">
@@ -22,43 +23,48 @@
 			</div>
 		</header>
         <main>
-            <form>
-                <label for="nomesobrenome">Nome e sobrenome</label>
-                <input class="input-padrao" type="text" id="nomesobrenome" required>
-                
-                <label for="email">Email</label>
-                <input class="input-padrao" type="email" id="email" required 
-				placeholder="seuemail@dominio.com">
-                
-                <label for="telefone">Telefone</label>
-                <input class="input-padrao" type="tel" id="telefone" required placeholder="(XX) XXXXX-XXXX">
-				
-				<label for="mensagem">Mensagem</label>
-				<textarea id="mensagem" cols="70" rows="10" required ></textarea>
-				
-				<fieldset>
-					<legend>Como prefere o nosso contato?</legend>
-					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
-				
-					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
-				
-					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
-				</fieldset>
-				
-				<fieldset>
-					<legend>Qual horário prefere ser atendido?</legend>
-					<select>
-						<option>Manhã</option>
-						<option>Tarde</option>
-						<option>Noite</option>
-					</select>
-				</fieldset>
-				<label class="checkbox">
-					<input type="checkbox">
-					Gostaria de receber nossas novidades por email?
-				</label>
-				<input type="submit" value="Enviar Formulário" class="enviar">
-           </form>
+			<section class="formulario">
+				<form>
+					<label for="nomesobrenome">Nome e sobrenome</label>
+					<input class="input-padrao" type="text" id="nomesobrenome" required>
+					
+					<label for="email">Email</label>
+					<input class="input-padrao" type="email" id="email" required 
+					placeholder="seuemail@dominio.com">
+					
+					<label for="telefone">Telefone</label>
+					<input class="input-padrao" type="tel" id="telefone" required placeholder="(XX) XXXXX-XXXX">
+					
+					<label for="mensagem">Mensagem</label>
+					<textarea class="input-padrao" id="mensagem" cols="40" rows="10" required ></textarea>
+					
+					<fieldset>
+						<legend>Como prefere o nosso contato?</legend>
+						<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+					
+						<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+					
+						<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+					</fieldset>
+					
+					<fieldset>
+						<legend>Qual horário prefere ser atendido?</legend>
+						<select placeholder="-- Selecione aqui" class="input-padrao" >
+							<option value="" disabled selected>Selecione...</option>
+							<option>Manhã</option>
+							<option>Tarde</option>
+							<option>Noite</option>
+							<option>Não tenho preferencia de horário</option>
+						</select>
+					</fieldset>
+					<label class="checkbox">
+						<input type="checkbox">
+						Gostaria de receber nossas novidades por email?
+					</label>
+					<input type="submit" value="Enviar Formulário" class="enviar">
+				</form>	
+			</section>
+
 		   <table>
 				<thead>
 					<tr>
@@ -68,16 +74,32 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td>Segunda</td>
+						<td>Segunda-feira</td>
 						<td>8h ~ 20h</td>
 					</tr>
 					<tr>
-						<td>Quarta</td>
+						<td>Terça-feira</td>
 						<td>8h ~ 20h</td>
 					</tr>
 					<tr>
-						<td>Sexta</td>
+						<td>Quarta-feira</td>
 						<td>8h ~ 20h</td>
+					</tr>
+					<tr>
+						<td>Quinta-feira</td>
+						<td>8h ~ 20h</td>
+					</tr>
+					<tr>
+						<td>Sexta-Feira</td>
+						<td>8h ~ 20h</td>
+					</tr>
+					<tr>
+						<td>Sabado</td>
+						<td>8h ~ 14h</td>
+					</tr>
+					<tr>
+						<td>Domingos e Feriados</td>
+						<td>FECHADO</td>
 					</tr>
 				</tbody>
 		</table>
